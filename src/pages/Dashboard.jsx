@@ -33,13 +33,13 @@ const Dashboard = () => {
       <div className="container-fluid min-vh-100">
         <div className="row">
           {/* Main content */}
-          <main className="col-md-9 sm-auto col-lg-10 px-md-4 py-4">
+          <main className="sm-auto px-md-4 py-4">
             <h1 className="fw-bold">
               Hello, {user ? user.name : "User"}
             </h1>
 
             {workoutHistory.length > 0 ? (
-              <div className="row g-4 mt-3">
+              <div className="row g-4 mt-3 d-flex justify-content-evenly">
                 <div className="col-lg-4 col-md-6">
                   <div className="card shadow p-3">
                     <ExercisePieChart />
